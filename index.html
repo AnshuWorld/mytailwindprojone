@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="p-3 py-10 flex bg-black justify-between items-center fixed top-0 left-0 right-0 z-10 shadow-lg">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img class="object-cover max-w-12 max-h-12" src="Photo1.jpg" alt="Logo">
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-12 text-white">
+            <a href="#" class="font-medium ">Home</a>
+            <a href="#" class="font-medium ">Our Services</a>
+            <a href="#" class="font-medium ">Gallary</a>
+            <a href="#" class="font-medium ">About Us</a>
+            <a href="#" class="font-medium ">Contact</a>
+        </div>
+        <div id="login" class="hidden lg:flex gap-5 text-white rounded flex-1 justify-end pr-5">Login</div>
+        
+    
+        <!--
+        <button class="p-2 lg:hidden text-white" onclick="handleMenu()">
+            &#9776;
+        </button>
+    
+        <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-black text-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-w-12 max-h-12" src="Photo1.jpg" alt="Logo">
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    X
+                </button>
+            </div>
+            <div class="mt-6 text-white" >
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 hover:text-black block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 hover:text-black block rounded-lg">Our Services</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 hover:text-black block rounded-lg">Gallary</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 hover:text-black block rounded-lg">About Us</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 hover:text-black block rounded-lg">Contact</a>
+            </div>
+            
+        </div>-->
+    
+    </nav>
+    <div id="parallex" class="w-full h-screen bg-no-repeat bg-fixed bg-cover" style="background-image: url('giphy.gif');">
+        <div class="group absolute inset-0 flex items-center justify-center flex-col hover:animate-ping duration-8000">
+            <h1 class="p-3 text-4xl font-bold text-center text-white">Welcome To Our Restaurant</h1>
+            <!--<button class="bg-orange-800 p-4 m-5 rounded font-bold hover:bg-green-500 hover:text-white duration-8000">Read More ..</button>-->
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200">
+        <h1 class="py-10 font-bold text-center text-blue-900 text-5xl">About Us</h1>
+    </div>
+    <div class="flex py-5  mx-auto md:flex-row flex-col">
+        <div class="basis-[45%]">
+            <img src="Photo3.jpg" class="w-full" alt="">
+        </div>
+        <div class="basis-[55%] p-10">
+            <h1 class="text-4xl mb-10">Lorem ipsum dolor sit.</h1>
+            <p class="my-11">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, optio? Distinctio qui mollitia libero. Fugiat
+                necessitatibus pariatur nihil cupiditate libero. Nesciunt quasi eius, eum ducimus atque impedit dolor doloribus nam
+                id ea rem inventore facere voluptatem enim! Commodi asperiores recusandae dolores, fugit nobis magnam harum et velit
+                nulla laudantium soluta fuga.</p>
+            <p class="my-11">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, optio? Distinctio qui mollitia libero. Fugiat
+                necessitatibus pariatur nihil cupiditate libero. Nesciunt quasi eius, eum ducimus atque impedit dolor doloribus nam
+                id ea rem inventore facere voluptatem enim! Commodi asperiores recusandae dolores, fugit nobis magnam harum et velit
+                nulla laudantium soluta fuga.</p>
+            <p class="my-11">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, optio? Distinctio qui mollitia libero.
+                Fugiat
+                necessitatibus pariatur nihil cupiditate libero. Nesciunt quasi eius, eum ducimus atque impedit dolor doloribus nam
+                id ea rem inventore facere voluptatem enim! Commodi asperiores recusandae dolores, fugit nobis magnam harum et velit
+                nulla laudantium soluta fuga.</p>
+            <p class="my-11">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, optio? Distinctio qui mollitia libero. Fugiat necessitatibus pariatur nihil cupiditate libero. Nesciunt quasi eius, eum ducimus atque impedit dolor doloribus nam id ea rem inventore facere voluptatem enim! Commodi asperiores recusandae dolores, fugit nobis magnam harum et velit nulla laudantium soluta fuga.</p>
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 ">
+        <h1 class="py-10 font-bold text-center text-blue-900 text-5xl my-11">Our Appointment</h1>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 mx-auto gap-10">
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden">
+            <div class="overflow-hidden">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Botanialkoi</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 my-11" >
+        <h1 class="py-10 font-bold text-center text-blue-900 text-5xl">Our Services</h1>
+    </div>
+    <div class="mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-10 py-5">
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Lorem, ipsum dolor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti culpa quaerat mollitia, id numquam soluta
+                tempora quidem, in laboriosam nostrum!</p>
+        </div>
+    </div>
+    
+    <div id="ontent" class="h-95 bg-blue-200 my-11">
+        <h1 class="py-10 font-bold text-center text-blue-900 text-5xl">Our Gallary</h1>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 mx-auto gap-10">
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Photo2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+    </div>
+    <div id="ontent" class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 bg-black text-white py-20 mt-8">
+        <div class="text-center">
+            <h1 class="font-bold">Address:</h1>
+            <Address class="text-center">Bungalow No. 56,Barailley Road, Patliputra, Patna, Bihar</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">Phone:</h1>
+            <Address class="text-center">+91 62067 53738</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">E-mail ID:</h1>
+            <Address class="text-center">bceamritkeshri@gmail.com</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">Address:</h1>
+            <Address class="text-center">Bungalow No. 56,Barailley Road, Patliputra, Patna, Bihar</Address>
+        </div>
+    </div>
+    <script>
+        const navDialog = document.getElementById('nav-dialog');
+            function handleMenu() {
+                navDialog.classList.toggle('hidden');
+            }
+
+    </script>
+</body>
+</html>
