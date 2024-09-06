@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="p-3 py-10 flex bg-black justify-between items-center fixed top-0 left-0 right-0 z-10 shadow-lg">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img class="object-cover max-w-12 max-h-12" src="logo2.jpg" alt="Logo">
+        </a>
+        <div id="nav-menu" class="hidden lg:flex gap-10 text-white">
+            <a href="#about" class="font-bold">About Us</a>
+            <a href="#appoint" class="font-bold">Appointments</a>
+            <a href="#service" class="font-bold">Services</a>
+            <a href="#gallary" class="font-bold">Gallary</a>
+            <a href="#testinomials" class="font-bold">Testinomials</a>
+            <a href="#contact" class="font-bold">Contact</a>
+        </div>
+        <div id="login" class="hidden lg:flex gap-5 text-white flex-1 justify-end pr-5">Login</div>
+        <button class="p-2 lg:hidden text-white" onclick="handleMenu()">&#9776;</button>
+        <div id="nav-dialog" class="lg:hidden fixed z-10 bg-black text-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between items-center">
+                <a href="#" id="brand" class="flex gap-2 items-center justify-between">
+                    <img class="max-w-12 max-h-12" src="Photo1.jpg" alt="Logo">
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    X
+                </button>
+            </div>
+            <div class="mt-6 text-white">
+                <a href="#about" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">About Us</a>
+                <a href="#appoint" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">Appointments</a>
+                <a href="#service" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">Services</a>
+                <a href="#gallary" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">Gallary</a>
+                <a href="#testinomials" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">Testinomials</a>
+                <a href="#contact" class="font-medium m-3 p-3 block hover:bg-blue-200 hover:text-black">Contact</a>
+            </div>
+            
+        </div>
+    
+    </nav>
+    <div id="parallex" class="w-full h-screen bg-no-repeat bg-fixed bg-cover" style="background-image: url('giphy.gif');">
+        <div class="group absolute inset-0 flex items-center justify-center flex-col hover:animate-ping duration-8000">
+            <h1 class="p-3 text-4xl font-bold text-center text-white">Welcome To Our Restaurant</h1>
+            <!--<button class="bg-orange-800 p-4 m-5 rounded font-bold hover:bg-green-500 hover:text-white duration-8000">Read More ..</button>-->
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200">
+        <h1 id="about" class="py-10 font-bold text-center text-blue-900 text-5xl">About Us</h1>
+    </div>
+    <div class="flex py-5  mx-auto md:flex-row flex-col">
+        <div class="basis-[45%]">
+            <img src="about.jpg" class="w-full" alt="">
+        </div>
+        <div class="basis-[55%] p-10">
+            <h1 class="text-4xl mb-10 font-medium">Our Bistro Bar!</h1>
+            <p class="my-11">Restaurants in Patna, Patna Restaurants, Kurji restaurants, Best Kurji restaurants, Patna city restaurants, North Indian
+            Restaurants in Patna, North Indian near me, North Indian Restaurants in Kurji, Casual Dining in Patna, Casual Dining
+            near me, Casual Dining in Kurji, in Patna, near me, in Kurji, Order food online in Kurji, Order food online in Patna</p>
+            <p class="my-11">It's food quality is so good. Once you go there you never search any other restaurants than this restaurant. This is a common phenomena in Patna. Every restaurant has this common trait of in consistency, once upon a time it was a
+            fine dining experience, now it is a horrifying dining experience. It largely occurs due to change in chef. I would not
+            recommend, if you have the knowledge of how a good food tastes.</p>
+            <p class="my-11">Very good place for dinner with family or couple. Staffs are very proffesional. Well managed place with nyc environment
+            and tasty food. </p>
+            <p class="my-11">This is a very good place in Patna for any type of Food during Lunch or Dinner. Very good tasty food with quality
+            materials. Both for vegetarian & Non-vegetarian. must taste the food during visit to Patna.</p>
+            <button class="p-5 bg-black text-white rounded shadow-lg duration-1000 hover:bg-blue-700 hover:text-white "><p class="font-medium">Visit Us</p></button>
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 ">
+        <h1 id="appoint" class="py-10 font-bold text-center text-blue-900 text-5xl my-11">Our Appointments</h1>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 mx-auto gap-10">
+        <div class="shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint1.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Catering Services</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint2.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Dating Services</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint4.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Cafeteria</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint3.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Marriage Services</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint6.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Room Services</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint5.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Guest Greeting</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+        <div class="rounded shadow-lg text-center overflow-hidden m-11">
+            <div class="overflow-hidden">
+                <img src="appoint7.jpg" alt="" class="w-full h-[200px] hover:scale-125 duration-1000">
+            </div>
+            <h3 class="py-2 text-2xl text-center">Foreign Foods</h3>
+            <button class="w-full bg-black py-4 hover:bg-green-600 duration-1000">
+                <p class="animate-bounce duration-1000 font-bold text-white">Book Appointment</p>
+            </button>
+        </div>
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 my-11" >
+        <h1 id="service" class="py-10 font-bold text-center text-blue-900 text-5xl">Our Services</h1>
+    </div>
+    <div class="mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-10 py-5">
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Waiter service</h3>
+            <p>More commonly known as sit-down service, this type of service requires a waiter to take care of everything from taking
+            orders to serving food and payment.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Chinese banquet service</h3>
+            <p>This is another form of waiter service where each waiter takes care of a table or group of tables with 10-12 guests.
+            Dishes are usually communal and shared.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Buffet service</h3>
+            <p>In a buffet service, guests can choose their food from a wider selection made available on the buffet line.
+            Guests get food from a buffet line and waiters move around to clear tables and help guests with minor requests.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Self-service</h3>
+            <p>In this type of food service, diners place, pay, and pick up their orders at a counter similar to fast casual and
+            fast-food establishments.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Semi-self service</h3>
+            <p>Similar to self-service, this type of service requires diners to order and pay for their orders at the counter but
+            waiters serve the food when ready.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Customer Retention</h3>
+            <p>A restaurant that consistently delivers exceptional service is more likely to have repeat customers who become regulars,
+            boosting revenue and reputation over time.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Brand Reputation</h3>
+            <p>A restaurant known for its friendly staff and attentive service earns a reputation as a welcoming and reliable dining
+            destination, attracting more customers and fostering trust in the brand.</p>
+        </div>
+        <div class="group shadow-lg p-5 text-center hover:bg-green-500 hover:text-white duration-1000">
+            <h3 class="py-5 text-xl font-bold group-hover:animate-bounce duration-1000">Mobile Ordering and Payments</h3>
+            <p>POSApt offers mobile ordering and payment capabilities, allowing customers to place orders from their smartphones and
+            pay directly from their table.</p>
+        </div>
+    </div>
+    
+    <div id="ontent" class="h-95 bg-blue-200 my-11">
+        <h1 id="gallary" class="py-10 font-bold text-center text-blue-900 text-5xl">Our Gallary</h1>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 mx-auto gap-10">
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary1.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary2.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary3.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary4.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary4.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary9.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        <div class="rounded shadow-lg text-center">
+            <div class="">
+                <img src="Gallary8.jpg" alt="" class="w-full hover:scale-110 duration-1000">
+            </div>
+        </div>
+        
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 my-11">
+        <h1 id="testinomials" class="py-10 font-bold text-center text-blue-900 text-5xl">Our Testinomials</h1>
+    </div>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 mx-auto">
+        <div class="group text-center hover:bg-gray-600 hover:text-white duration-1000 shadow-lg hover:scale-125 m-5">
+            <h3 class="pt-5 font-bold">Amrit Mahavar</h3>
+            <p class="p-5">Good food, courteous service . It provides a nice view of river Ganga from one side..the fish kababs are tasty.</p>
+        </div>
+        <div class="group text-center shadow-lg hover:bg-gray-600 hover:text-white duration-1000 hover:scale-125 m-5">
+            <h3 class="pt-5 font-bold">Ashutosh Maheshwari</h3>
+            <p class="p-5">I have been with my family to Bistro Bar aot many times and I have always found the food amazing and the staff very
+            courteous and helpful. Special mention to Mr Rama Shankar, who has been wonderful. Thank you Bistro Bar</p>
+        </div>
+        <div class="group text-center hover:bg-gray-600 hover:text-white duration-1000 hover:scale-125 m-5 shadow-lg">
+            <h3 class="pt-5 font-bold">Anand Marwar</h3>
+            <p class="p-5">I visited this place with my friend on his birthday what a restaurant the quality and quantity of food was fabulous,
+            service was good price was fair</p>
+        </div>
+        <div class="group text-center shadow-lg hover:text-white hover:bg-gray-600 hover:scale-125 m-5 duration-100">
+            <h3 class="pt-5 font-bold">Avinav Keshari</h3>
+            <p class="p-5">Ambiance and interior is pretty good. Bistro Bar located at the top floor of P&M mall so the view from here is amazing.
+            One can have lunch / dinner overlooking Ganges. Service and food I found good and moderately priced. Over all it was
+            pretty good experience.</p>
+        </div>
+
+    </div>
+    <div id="ontent" class="h-95 bg-blue-200 my-11">
+        <h1 id="contact" class="py-10 font-bold text-center text-blue-900 text-5xl">Our Contacts</h1>
+    </div>
+    <div class="flex py-5  mx-auto md:flex-row flex-col">
+        <div class="basis-[45%]">
+            <img src="form.jpg" class="w-full" alt="">
+        </div>
+        <div class="basis-[55%] p-10 flex-col mx-auto">
+            <h1 class="text-4xl mb-10 font-bold">Contact Form !</h1>
+            <label for="name" class="mb-2 block">Name:</label>
+            <input id="name" type="text" class="block w-full rounded-lg border border-gray-300">
+            <label for="email" class="mb-2 block">E-mail:</label>
+            <input id="email" type="email" class="block w-full rounded-lg border border-gray-300">
+            <label for="msg" class="mb-2 block">Message:</label>
+            <textarea rows="7" class="block w-full rounded-lg border border-gray-300"></textarea>
+            <button class="bg-red-700 text-white my-5 p-5 rounded-lg shadow-lg font-medium">Send Us</button>
+        </div>
+    </div>
+    <div id="ontent" class="grid lg:grid-cols-4 md:grid-cols-2 gap-10 bg-black text-white py-20 mt-8">
+        <div class="text-center">
+            <h1 class="font-bold">Address:</h1>
+            <Address class="text-center">Bungalow No. 56,Barailley Road, Patliputra, Patna, Bihar</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">Phone:</h1>
+            <Address class="text-center">+91 62067 53738</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">E-mail ID:</h1>
+            <Address class="text-center">bceamritkeshri@gmail.com</Address>
+        </div>
+        <div class="text-center">
+            <h1 class="font-bold">Address:</h1>
+            <Address class="text-center">Bungalow No. 56,Barailley Road, Patliputra, Patna, Bihar</Address>
+        </div>
+    </div>
+    <script>
+        const navDialog = document.getElementById('nav-dialog');
+            function handleMenu() {
+                navDialog.classList.toggle('hidden');
+            }
+
+    </script>
+</body>
+</html>
